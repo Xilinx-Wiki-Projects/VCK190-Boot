@@ -1,0 +1,8 @@
+/*vck190_wrapper*/
+the_ROM_image:
+{
+[bootimage] ../vck190_wrapper/hw/vck190_wrapper.pdi 
+[bootloader] ../plm/Debug/plm.elf 
+[destination_cpu=psm] ../psmfw/Debug/psmfw.elf 
+[destination_cpu=a72-0, exception_level=el-3] ../hello_a72_0/Debug/hello_a72_0.elf
+}
