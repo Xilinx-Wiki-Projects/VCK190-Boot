@@ -12,19 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-/*vck190_wrapper*/
-the_ROM_image:
+All:
 {
-	image 
-	{
-		{ type=bootimage, file= ../vck190_wrapper/hw/vck190_wrapper.pdi  } 
-		{ type=bootloader, file= ../plm/Debug/plm.elf  } 
-		{ core=psm, file= ../psmfw/Debug/psmfw.elf  } 
-	}
 	image
 	{
-		name=apu_subsystem
-		id = 0x1c000000
-		{ core=a72-0, exception_level=el-3, trustzone, file= ../hello_a72_0/Debug/hello_a72_0.elf } 
+		{type=bootloader, file=../Software/Vitis/workspace/plm/Debug/plm.elf}
 	}
 }

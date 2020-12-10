@@ -1,15 +1,9 @@
-# Wiki Project Template Repository
-This repository contains the template for creating a repository for the Xilinx Wiki.
-
-This top-level README serves as a high-level entry point to the rest of your repository.
-
-**IMPORTANT:** Follow the guidelines laid out in this README.md to create your own, using the same layout and headings.
-
-A repository may be made up of one or more of the `template_project` directories, each containing their own design.
+# Wiki-Projecta VCK190-Boot Repository
+This repository contains Versal Example Designs related to boot on a VCK190 board. 
 
 ---
 ## **What to Expect**
-The `template_project` contains the following structure:
+Each Versal Example Design contains the following structure:
 
 ```
 <design>
@@ -17,19 +11,21 @@ The `template_project` contains the following structure:
 │   └── constraints
 │       └── constraints.xdc
 ├── README.md
+├── Icons
 ├── Scripts
-│   ├── <design>.ui
 │   ├── <design>_bd.tcl
 │   └── project_top.tcl
 └── Software
     ├── PetaLinux
-    └── SDK
+    └── Vitis
 ````
-Each design's `README.md` will provide:
+Each design's `README.md` will provide a detailed overview of the Versal Example Design.
+
+For example:
 
 - **Design Summary** - Brief summary of the design.
 
-- **Required Hardware** - Listing of required hardware
+- **Required Hardware and Tools** - Listing of required hardware
 
 - **Build Instructions** - Instructions on how to re-build the designs
 

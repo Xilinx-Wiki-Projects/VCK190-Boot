@@ -12,4 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-set_property BITSTREAM.GENERAL.COMPRESS FALSE [current_design]
+#Set the 0xF1110004 to another boot image. For example, below will set it to 2. 
+
+xsct% mwr 0xF1110004 0x2
+
+#send the system reset, this will not reset the PMC_multiboot value. 
+
+rst -sys

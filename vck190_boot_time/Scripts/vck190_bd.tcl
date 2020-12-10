@@ -1,3 +1,16 @@
+# Copyright 2020 Xilinx Inc.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
 
 ################################################################
 # This is a generated script based on design: design_1
@@ -125,7 +138,7 @@ set bCheckIPs 1
 if { $bCheckIPs == 1 } {
    set list_check_ips "\ 
 xilinx.com:ip:axi_noc:1.0\
-xilinx.com:ip:versal_cips:2.0\
+xilinx.com:ip:versal_cips:2.1\
 "
 
    set list_ips_missing ""
@@ -289,7 +302,7 @@ proc create_root_design { parentCell } {
  ] [get_bd_pins /axi_noc_0/aclk5]
 
   # Create instance: versal_cips_0, and set properties
-  set versal_cips_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:versal_cips:2.0 versal_cips_0 ]
+  set versal_cips_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:versal_cips:2.1 versal_cips_0 ]
   set_property -dict [ list \
    CONFIG.PMC_GPIO0_MIO_PERIPHERAL_ENABLE {1} \
    CONFIG.PMC_GPIO1_MIO_PERIPHERAL_ENABLE {1} \
