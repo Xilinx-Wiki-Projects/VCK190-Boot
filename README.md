@@ -1,4 +1,4 @@
-# Wiki-Projecta VCK190-Boot Repository
+# Wiki-Projects VCK190-Boot Repository
 This repository contains Versal Example Designs related to boot on a VCK190 board. 
 
 ---
