@@ -2,7 +2,7 @@
 This repository contains Versal Example Designs related to boot on a VCK190 board. 
 
 ---
-## **What to Expect**
+## **What to Expect:**
 Each Versal Example Design contains the following structure:
 
 ```
